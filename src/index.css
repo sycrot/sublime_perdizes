@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Bicyclette";
+  src: url("./assets/fonts/Bicylette/Bicyclette-Black.woff") format('woff');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Bicyclette";
+  src: url("./assets/fonts/Bicylette/Bicyclette-Bold.woff") format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Bicyclette";
+  src: url("./assets/fonts/Bicylette/Bicyclette-Italic.woff") format('woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Bicyclette";
+  src: url("./assets/fonts/Bicylette/Bicyclette-Light.woff") format('woff');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Bicyclette";
+  src: url("./assets/fonts/Bicylette/Bicyclette-Regular.woff") format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Bicyclette";
+  src: url("./assets/fonts/Bicylette/Bicyclette-Thin.woff") format('woff');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Bicyclette";
+  src: url("./assets/fonts/Bicylette/Bicyclette-Ultra.woff") format('woff');
+  font-weight: 900;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}

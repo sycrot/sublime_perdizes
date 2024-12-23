@@ -1,0 +1,14 @@
+.gallery {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .image {
+    width: 24%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.conveniencia {
+  padding: 81px 0;
+  background-size: cover;
+  background-position: center;
+
+  .header {
+    text-align: center;
+
+    h1 {
+      font-family: "Philosopher";
+      font-size: 60px;
+      font-weight: normal;
+      font-style: normal;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 18px;
+    }
+
+    span {
+      font-family: "Helvetica Neue";
+      font-size: 24px;
+      font-weight: normal;
+      font-style: normal;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  .content {
+    display: flex;
+    gap: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 56px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .actions {
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,73 @@
+.plantas {
+  padding: 116px 0;
+
+  .header {
+    text-align: center;
+    margin-bottom: 192px;
+
+    span {
+      font-family: "Helvetica Neue";
+      font-size: 24px;
+      font-weight: normal;
+      font-style: normal;
+      text-align: center;
+      color: #707070;
+    }
+
+    h1 {
+      font-family: "Philosopher";
+      font-size: 60px;
+      font-weight: normal;
+      font-style: normal;
+      text-align: center;
+      color: #a9895b;
+      margin-top: 20px;
+    }
+  }
+
+  .slide {
+    width: 100%;
+
+    .carouselItem {
+      text-align: center;
+
+      span {
+        font-family: "Philosopher";
+        font-size: 36px;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        color: #626262;
+        margin-bottom: 18px;
+        display: block;
+      }
+
+      width: 68%;
+      margin-left: auto;
+      margin-right: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    :global(.carousel-control-prev-icon) {
+      width: 63px;
+      height: 63px;
+      background-image: url(../../assets/icons/unicons-arrow-c-2.png);
+      transform: rotate(-180deg);
+    }
+
+    :global(.carousel-control-next-icon) {
+      width: 63px;
+      height: 63px;
+      background-image: url(../../assets/icons/unicons-arrow-c-2.png);
+    }
+  }
+
+  .actions {
+    margin-top: 290px;
+    display: flex;
+    justify-content: center;
+  }
+}

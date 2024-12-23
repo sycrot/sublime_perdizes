@@ -1,0 +1,49 @@
+.button {
+  display: inline-block;
+
+  a {
+    width: 100%;
+    display: flex;
+    border: none;
+    text-decoration: none;
+    align-items: center;
+    padding: 20px 29px;
+    gap: 18px;
+    font-family: "Helvetica Neue";
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(.9);
+    }
+
+    img {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  p {
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &.primary {
+    background: #a9895b;
+    color: #fff !important;
+
+    a {
+      color: #fff !important;
+    }
+  }
+
+  &.secondary {
+    background: #ddd5c8;
+    color: #707070 !important;
+
+    a {
+      color: #707070 !important;
+    }
+  }
+}

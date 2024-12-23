@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+.sp-header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#informationOne {
+  padding-top: 141px;
+  padding-bottom: 146px;
+}
+#informationOne .informationOne_Image {
+  width: 100%;
+}
+
+.buttonContent {
+  width: 100%;
+  padding: 35px;
+}
+
+#informationTwo {
+  padding-top: 233px;
+  background-size: 100% 1080px;
+  position: relative;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+#informationTwo .info {
+  width: 100%;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  padding-top: 135%;
+}
+
+#informationTwo .informationTwo_image {
+  width: 100%;
+  height: 100%;
+}

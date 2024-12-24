@@ -1,10 +1,14 @@
 .footer {
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: top;
   padding: 105px;
   padding-bottom: 69px;
   position: relative;
   margin-top: 274px;
+
+  @media screen and (max-width: 1080px) {
+    margin-top: 559px;
+  }
 
   .header {
     text-align: center;
@@ -17,6 +21,10 @@
       text-align: center;
       color: #a9895b;
       margin-bottom: 0;
+
+      @media screen and (max-width: 1080px) {
+        font-size: 46px;
+      }
     }
 
     span {

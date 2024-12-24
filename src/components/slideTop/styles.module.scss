@@ -13,6 +13,7 @@
 
   .image {
     position: relative;
+    height: 100%;
 
     .slideHeader {
       position: absolute;
@@ -27,6 +28,10 @@
         font-weight: normal;
         color: #ffffff;
         margin-bottom: 16px;
+
+        @media screen and (max-width: 1080px) {
+          font-size: 40px;
+        }
       }
 
       .subtitle {
@@ -45,6 +50,10 @@
           position: relative;
           display: inline-block;
           z-index: 10;
+
+          @media screen and (max-width: 1080px) {
+            font-size: 20px;
+          }
 
           &::after {
             content: '';
@@ -70,6 +79,10 @@
           position: relative;
           display: inline-block;
           z-index: 10;
+
+          @media screen and (max-width: 1080px) {
+            font-size: 16px;
+          }
 
           &::after {
             content: '';

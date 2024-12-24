@@ -31,7 +31,7 @@ function App() {
               linkButton='https://google.com/'
             />
           </div>
-          <div className="col-12 col-md-7 ps-5">
+          <div className="col-12 col-md-7 mt-4 mt-md-0 ps-md-5 ">
             <img className="informationOne_Image" src={ImageMap1} alt="Map 1" />
           </div>
         </div>
@@ -71,7 +71,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6 mt-4 mt-md-0">
               <div>
                 <Information
                   spanText='Sublime em cada detalhe'

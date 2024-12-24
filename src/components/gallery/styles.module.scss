@@ -13,6 +13,10 @@
       cursor: pointer;
       transition: all .4s;
 
+      @media screen and (max-width: 1080px) {
+        width: 47%;
+      }
+
       &:hover {
         transform: scale(1.2);
         box-shadow: 1px 4px 4px rgba(0, 0, 0, .4);

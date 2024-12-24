@@ -16,7 +16,7 @@ function Nav() {
               <p>Corretora Debora</p>
             </div>
           </div>
-          <div className="col-12 col-md-4 text-center">
+          <div className="col-12 col-md-4 text-center mt-4 mt-md-0">
             <div className={styles.item}>
               <div className={styles.icon}>
                 <img src={WppIcon} alt="Whats App" />
@@ -24,7 +24,7 @@ function Nav() {
               <p>(11) 93239-3570</p>
             </div>
           </div>
-          <div className="col-12 col-md-4 text-center">
+          <div className="col-12 col-md-4 text-center mt-5 mt-md-0">
             <div className={styles.item}>
               <p>CRECI 227.545-F</p>
             </div>

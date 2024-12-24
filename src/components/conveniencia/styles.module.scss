@@ -33,6 +33,10 @@
     box-sizing: border-box;
     margin-top: 56px;
 
+    @media screen and (max-width: 1080px) {
+      flex-wrap: wrap;
+    }
+
     img {
       width: 100%;
     }

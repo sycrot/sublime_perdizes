@@ -53,13 +53,15 @@ const images = [
 
 function Gallery() {
   return (
-    <div className="container">
-      <div className={styles.gallery}>
-        {images.map(image => (
-          <div className={styles.image}>
-            <img src={image.url} />
-          </div>
-        ))}
+    <div className={styles.galleryContainer}>
+      <div className={`container`}>
+        <div className={styles.gallery}>
+          {images.map(image => (
+            <div className={styles.image}>
+              <img src={image.url} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

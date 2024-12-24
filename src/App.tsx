@@ -10,6 +10,8 @@ import bgInfo2 from './assets/images/Img_Bkg1.png';
 import Plantas from './components/plantas';
 import Conveniencia from './components/conveniencia';
 import Gallery from './components/gallery';
+import Vista from './components/vista';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -88,6 +90,9 @@ function App() {
       <Plantas />
       <Conveniencia />
       <Gallery />
+      <Vista />
+
+      <Footer />
     </>
   )
 }

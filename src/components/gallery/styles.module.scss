@@ -1,14 +1,26 @@
-.gallery {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  width: 100%;
+.galleryContainer {
+  background: #f2f2f2;
 
-  .image {
-    width: 24%;
+  .gallery {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 63px 0;
 
-    img {
-      width: 100%;
+    .image {
+      width: 24%;
+      cursor: pointer;
+      transition: all .4s;
+
+      &:hover {
+        transform: scale(1.2);
+        box-shadow: 1px 4px 4px rgba(0, 0, 0, .4);
+      }
+
+      img {
+        width: 100%;
+      }
     }
   }
 }

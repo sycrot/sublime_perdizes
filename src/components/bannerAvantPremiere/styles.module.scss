@@ -1,0 +1,40 @@
+.avantPremiere {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -198px;
+
+  .container {
+    background-size: cover;
+    background-position: top;
+    padding: 40px 92px;
+    display: flex;
+    gap: 46px;
+    align-items: center;
+    max-width: 1520px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .content {
+      h1 {
+        font-family: "Philosopher";
+        font-size: 60px;
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        color: #ffffff;
+        margin: 0;
+      }
+
+      p {
+        font-family: "Philosopher";
+        font-size: 30px;
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        color: #ffffff;
+        margin: 0;
+      }
+    }
+  }
+}

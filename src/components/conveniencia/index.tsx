@@ -33,7 +33,7 @@ function Conveniencia() {
         </div>
         <div className={styles.actions}>
           <Button
-            text='Solicite o e-book'
+            text='SOLICITE O E-BOOK'
             type={ButtonType.secondary}
             icon={ArrowRight}
             url="https://google.com"

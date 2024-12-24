@@ -2,7 +2,9 @@ import * as React from 'react';
 import styles from './styles.module.scss';
 import { Carousel } from 'react-bootstrap';
 import { ISlideTop } from '../../types/ISlideTop';
-import Image1 from '../../assets/images/Img_BnCapa2.png'
+import Image1 from '../../assets/images/Img_BnCapa2.png';
+import Image2 from '../../assets/images/Img_BnCapa3.png';
+import Image3 from '../../assets/images/Img_BnCapa4.png';
 import Button from '../button';
 import { ButtonType } from '../enums/ButtonType';
 
@@ -13,6 +15,20 @@ const slideItems: ISlideTop[] = [
     span: 'O melhore em todos os sentidos',
     link: 'https://google.com/',
     imageUrl: Image1
+  },
+  {
+    title: 'Sublime',
+    subtitle: 'Pompeia',
+    span: 'O melhore em todos os sentidos',
+    link: 'https://google.com/',
+    imageUrl: Image2
+  },
+  {
+    title: 'Sublime',
+    subtitle: 'Pompeia',
+    span: 'O melhore em todos os sentidos',
+    link: 'https://google.com/',
+    imageUrl: Image3
   },
 ]
 

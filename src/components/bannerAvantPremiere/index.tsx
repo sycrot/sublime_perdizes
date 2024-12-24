@@ -14,25 +14,29 @@ function BannerAvantPremiere(props: { style?: CSSProperties }) {
       }}
     >
       <div
-        className={`${styles.container}`}
-        style={{
-          backgroundImage: `url(${Background})`
-        }}
+        className={`container`}
       >
-        <div className={styles.content}>
-          <h1>Avant Premiere</h1>
-          <p>Os primeiros 40 clientes teräo a vantagem de escolher entre todas as unidades disponíveis no prédio e aproveitar os preços da primeira tabela.</p>
-        </div>
-        <div>
-          <Button
-            type={ButtonType.secondary}
-            text='CADASTRE-SE'
-            icon={ArrowRight}
-            url="https://google.com/"
-            style={{
-              width: '304px'
-            }}
-          />
+        <div
+          className={styles.container}
+          style={{
+            backgroundImage: `url(${Background})`
+          }}
+        >
+          <div className={styles.content}>
+            <h1>Avant Premiere</h1>
+            <p>Os primeiros 40 clientes teräo a vantagem de escolher entre todas as unidades disponíveis no prédio e aproveitar os preços da primeira tabela.</p>
+          </div>
+          <div>
+            <Button
+              type={ButtonType.secondary}
+              text='CADASTRE-SE'
+              icon={ArrowRight}
+              url="https://google.com/"
+              style={{
+                width: '304px'
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -26,7 +26,7 @@ function App() {
             <Information
               spanText='Sublime em cada detalhe'
               title='Viva no melhor lugar de Perdizes'
-              contentText='Viva em uma das areas mais prestigiadas e desejadas de Säo Paulo, cercado por infraestrutura de alto padrão, serviços exclusivos e comodidades que atendem a todas as suas necessidades. Desfrute de uma qualidade de vida incomparável, com conforto, segurança e o estilo de vida sofisticado que você merece.'
+              contentText='Viva em uma das areas mais prestigiadas e desejadas de São Paulo, cercado por infraestrutura de alto padrão, serviços exclusivos e comodidades que atendem a todas as suas necessidades. Desfrute de uma qualidade de vida incomparável, com conforto, segurança e o estilo de vida sofisticado que você merece.'
               buttonText='AGENDE SUA VISITA'
               linkButton='https://google.com/'
             />

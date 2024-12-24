@@ -15,6 +15,12 @@
     position: relative;
     height: 100%;
 
+    @media screen and (max-width: 1080px) {
+      img {
+        height: 100%;
+      }
+    }
+
     .slideHeader {
       position: absolute;
       top: 10%;
@@ -45,7 +51,7 @@
           font-weight: normal;
           text-transform: uppercase;
           font-size: 36px;
-          letter-spacing: 6px;
+          letter-spacing: 15px;
           color: #ffffff;
           position: relative;
           display: inline-block;

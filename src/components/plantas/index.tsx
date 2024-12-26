@@ -59,7 +59,7 @@ const PlantasItems = [
   },
 ]
 
-function Plantas(props: IPlantasProps) {
+function Plantas() {
   return (
     <div className={styles.plantas}>
       <div className="container">

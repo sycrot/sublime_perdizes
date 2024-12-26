@@ -1,4 +1,3 @@
-import * as React from 'react';
 import styles from './styles.module.scss';
 import { Carousel } from 'react-bootstrap';
 import { ISlideTop } from '../../types/ISlideTop';

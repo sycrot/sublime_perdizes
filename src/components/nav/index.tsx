@@ -1,4 +1,3 @@
-import * as React from 'react';
 import styles from './styles.module.scss';
 import CorretoraDebora from '../../assets/images/FotoDebora1.png';
 import WppIcon from '../../assets/icons/whatsapp.png'

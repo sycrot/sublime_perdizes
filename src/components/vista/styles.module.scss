@@ -27,9 +27,17 @@
 
   .videoDefault {
     width: 100%;
-    height: 420px;
+    height: 357.75px;
     background: #000;
     cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+    }
 
     iframe {
       width: 100%;

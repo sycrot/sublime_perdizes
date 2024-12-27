@@ -28,6 +28,7 @@ function Vista() {
                 className={styles.videoDefault}
                 onClick={() => handleShow("https://www.youtube.com/embed/QzdbB6YnDEA?si=lVN6W5zN8uMnZ9dA")}
               >
+                {/* <img src={`https://img.youtube.com/vi/QzdbB6YnDEA/maxresdefault.jpg`} alt="Vista Pompeia" /> */}
               </div>
             </div>
             <div className="col-12 col-md-6">
@@ -36,6 +37,7 @@ function Vista() {
                 className={styles.videoDefault}
                 onClick={() => handleShow("https://www.youtube.com/embed/StNqF4FaD9k?si=taoAC4Q4Nmvf6-L1")}
               >
+                {/* <img src={`https://img.youtube.com/vi/StNqF4FaD9k/maxresdefault.jpg`} alt="Vista Bairro" /> */}
               </div>
             </div>
           </div>

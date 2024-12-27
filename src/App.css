@@ -24,6 +24,13 @@ p {
 .buttonContent {
   width: 100%;
   padding: 35px;
+  z-index: 100;
+}
+
+.modalHeader {
+  padding: 10px;
+  display: flex;
+  justify-content: end;
 }
 
 #informationTwo {
@@ -50,6 +57,7 @@ p {
   display: flex;
   align-items: end;
   padding-top: 112%;
+  cursor: pointer;
 }
 
 #informationTwo .informationTwo_image {

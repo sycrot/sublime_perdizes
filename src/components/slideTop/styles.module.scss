@@ -2,6 +2,19 @@
   height: 80%;
   display: flex;
   flex-grow: 1;
+  position: relative;
+
+  .controls {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 
   :global(.carousel-inner) {
     height: 100%;
@@ -12,12 +25,14 @@
   }
 
   .image {
-    position: relative;
     height: 100%;
+    position: relative;
 
     @media screen and (max-width: 1080px) {
       img {
         height: 100%;
+        position: absolute;
+        left: 0;
       }
     }
 
@@ -105,6 +120,16 @@
         }
       }
     }
+  }
+
+  :global(.carousel-control-prev) {
+    justify-content: left;
+    position: relative;
+  }
+
+  :global(.carousel-control-next) {
+    justify-content: right;
+    position: relative;
   }
 
   :global(.carousel-control-prev-icon) {

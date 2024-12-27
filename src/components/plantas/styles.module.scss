@@ -1,9 +1,9 @@
 .plantas {
   padding: 116px 0;
 
-  :global(.container) {
+  /* :global(.container) {
     max-width: 1720px !important;
-  }
+  } */
 
   .header {
     text-align: center;
@@ -53,6 +53,14 @@
       img {
         max-width: 100%;
       }
+    }
+
+    :global(.carousel-control-prev) {
+      justify-content: left;
+    }
+
+    :global(.carousel-control-next) {
+      justify-content: right;
     }
 
     :global(.carousel-control-prev-icon) {

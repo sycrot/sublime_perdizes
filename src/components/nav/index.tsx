@@ -6,16 +6,16 @@ function Nav() {
   return (
     <div className={styles.nav}>
       <div className="container">
-        <div className="row">
-          <div className="col-12 col-md-4 text-center">
-            <div className={styles.item}>
+        <div className={styles.items}>
+          <div className="">
+            <div className={styles.item} style={{ justifyContent: 'start' }}>
               <div className={styles.corretor}>
                 <img src={CorretoraDebora} alt="Corretora Debora" />
               </div>
               <p>Corretora Debora</p>
             </div>
           </div>
-          <div className="col-12 col-md-4 text-center mt-4 mt-md-0">
+          <div className="text-center mt-4 mt-md-0">
             <div className={styles.item}>
               <div className={styles.icon}>
                 <img src={WppIcon} alt="Whats App" />
@@ -23,8 +23,8 @@ function Nav() {
               <p>(11) 93239-3570</p>
             </div>
           </div>
-          <div className="col-12 col-md-4 text-center mt-5 mt-md-0">
-            <div className={styles.item}>
+          <div className="text-center mt-5 mt-md-0">
+            <div className={styles.item} style={{ justifyContent: 'end' }}>
               <p>CRECI 227.545-F</p>
             </div>
           </div>

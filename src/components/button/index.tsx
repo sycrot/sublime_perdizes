@@ -18,6 +18,7 @@ function Button(props: IButtonProps) {
     >
       <a
         href={url}
+        target='_blank'
       >
         <p>{text}</p>
         {icon &&

@@ -11,6 +11,8 @@ import Image9 from '../../assets/images/gallery/9.png';
 import Image10 from '../../assets/images/gallery/10.png';
 import Image11 from '../../assets/images/gallery/11.png';
 import Image12 from '../../assets/images/gallery/12.png';
+import { Carousel, Modal } from 'react-bootstrap';
+import { useState } from 'react';
 
 const images = [
   {
@@ -52,18 +54,58 @@ const images = [
 ]
 
 function Gallery() {
+  const [show, setShow] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex: number) => {
+    setIndex(selectedIndex);
+    handleShow();
+  };
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <div className={styles.galleryContainer}>
-      <div className={`container`}>
-        <div className={styles.gallery}>
-          {images.map(image => (
-            <div className={styles.image}>
-              <img src={image.url} />
-            </div>
-          ))}
+    <>
+      <div className={styles.galleryContainer}>
+        <div className={`container`}>
+          <div className={styles.gallery}>
+            {images.map((image, index) => (
+              <div className={styles.image} onClick={() => handleSelect(index)}>
+                <img src={image.url} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        animation={true}
+        centered
+        style={{
+          maxWidth: '100%'
+        }}
+        size='lg'
+      >
+        <Modal.Header closeButton>
+        </Modal.Header>
+
+        <Carousel
+          interval={800000}
+          activeIndex={index}
+          onSelect={handleSelect}
+          className={styles.carousel}
+        >
+          {images.map(image => (
+            <Carousel.Item>
+              <img src={image.url} />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </Modal>
+    </>
+
   )
 }
 

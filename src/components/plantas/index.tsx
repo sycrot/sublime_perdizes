@@ -91,7 +91,7 @@ function Plantas() {
             type={ButtonType.primary}
             text='CONSULTE VALORES'
             icon={ArrowRight}
-            url='https://google.com/'
+            url='https://wa.me/5511932393570?text=Ol%C3%A1%2C+D%C3%A9bora%21+Tudo+bem%3F+Gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+o+empreendimento.+Meu+interesse+est%C3%A1+voltado+para+o+apartamento+de%3A'
           />
         </div>
       </div>

@@ -12,8 +12,15 @@ import Conveniencia from './components/conveniencia';
 import Gallery from './components/gallery';
 import Vista from './components/vista';
 import Footer from './components/footer';
+import { useState } from 'react';
+import { Modal } from 'react-bootstrap';
 
 function App() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
       <div className='sp-header'>
@@ -28,7 +35,7 @@ function App() {
               title='Viva no melhor lugar de Perdizes'
               contentText='Viva em uma das areas mais prestigiadas e desejadas de São Paulo, cercado por infraestrutura de alto padrão, serviços exclusivos e comodidades que atendem a todas as suas necessidades. Desfrute de uma qualidade de vida incomparável, com conforto, segurança e o estilo de vida sofisticado que você merece.'
               buttonText='AGENDE SUA VISITA'
-              linkButton='https://google.com/'
+              linkButton='https://wa.me/5511932393570?text=Ol%C3%A1%2C+D%C3%A9bora%21+Tudo+bem%3F+Gostaria+de+agendar+uma+visita+ao+stand.'
             />
           </div>
           <div className="col-12 col-md-7 mt-4 mt-md-0 ps-md-5 ">
@@ -58,12 +65,15 @@ function App() {
                 style={{
                   backgroundImage: `url(${ImageInfo2})`
                 }}
+                onClick={() => {
+                  handleShow()
+                }}
               >
-                <div className="buttonContent">
+                <div className="buttonContent" onClick={e => e.stopPropagation()}>
                   <Button
                     text='Saiba mais'
                     type={ButtonType.secondary}
-                    url="https://google.com/"
+                    url="https://wa.me/5511932393570?text=Ol%C3%A1%2C+D%C3%A9bora%21+Tudo+bem%3F+Gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+o+empreendimento.+Meu+interesse+est%C3%A1+voltado+para+o+apartamento+de%3A"
                     style={{
                       width: '100%'
                     }}
@@ -93,6 +103,12 @@ function App() {
       <Vista />
 
       <Footer />
+
+      <Modal show={show} onHide={handleClose} centered size="xl">
+        <Modal.Header closeButton>
+        </Modal.Header>
+        <iframe height="500" src="https://www.youtube.com/embed/QzdbB6YnDEA?si=lVN6W5zN8uMnZ9dA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      </Modal>
     </>
   )
 }

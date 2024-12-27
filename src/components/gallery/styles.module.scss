@@ -9,16 +9,17 @@
     padding: 63px 0;
 
     .image {
-      width: 24%;
+      width: 24.07%;
       cursor: pointer;
       transition: all .4s;
+      cursor: pointer;
 
       @media screen and (max-width: 1080px) {
         width: 47%;
       }
 
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.02);
         box-shadow: 1px 4px 4px rgba(0, 0, 0, .4);
       }
 
@@ -26,5 +27,11 @@
         width: 100%;
       }
     }
+  }
+}
+
+.carousel {
+  img {
+    width: 100%;
   }
 }

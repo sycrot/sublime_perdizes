@@ -36,7 +36,7 @@ function Conveniencia() {
             text='SOLICITE O E-BOOK'
             type={ButtonType.secondary}
             icon={ArrowRight}
-            url="https://google.com"
+            url="https://www.diariodois.com.br/vid/BookSublime1.pdf"
           />
         </div>
       </div>

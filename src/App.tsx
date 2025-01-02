@@ -3,7 +3,6 @@ import Information from './components/information'
 import Nav from './components/nav'
 import SlideTop from './components/slideTop'
 import ImageMap1 from './assets/images/Img_Map1.png';
-import ImageInfo2 from './assets/images/Screenshot 2024-11-2.png'
 import Button from './components/button';
 import { ButtonType } from './components/enums/ButtonType';
 import bgInfo2 from './assets/images/Img_Bkg1.png';
@@ -14,6 +13,7 @@ import Vista from './components/vista';
 import Footer from './components/footer';
 import { useState } from 'react';
 import { Modal } from 'react-bootstrap';
+import { FaPlayCircle } from 'react-icons/fa';
 
 function App() {
   const [show, setShow] = useState(false);
@@ -23,6 +23,7 @@ function App() {
 
   return (
     <>
+
       <div className='sp-header'>
         <Nav />
         <SlideTop />
@@ -54,7 +55,7 @@ function App() {
             className="row flex-sm-reverse"
           >
             <div
-              className="col-12 col-md-6 pe-5"
+              className="col-12 col-md-6 pe-md-5"
               style={{
                 position: 'relative',
                 boxSizing: 'border-box'
@@ -62,13 +63,27 @@ function App() {
             >
               <div
                 className="info"
-                style={{
-                  backgroundImage: `url(${ImageInfo2})`
-                }}
                 onClick={() => {
                   handleShow()
                 }}
               >
+                <button>
+                  <FaPlayCircle
+                    size={120}
+                    color='white'
+                    opacity={.7}
+                  />
+                </button>
+                <div className='video'>
+                  <video
+                    style={{
+                      width: '105%',
+                      height: '120%'
+                    }}
+                  >
+                    <source src="https://www.diariodois.com.br/vid/Video1.mp4" />
+                  </video>
+                </div>
                 <div className="buttonContent" onClick={e => e.stopPropagation()}>
                   <Button
                     text='Saiba mais'
@@ -88,7 +103,7 @@ function App() {
                   title='Viva no melhor bairro da Zona Oeste'
                   contentText='O Sublime Perdizes é um projeto exclusivo, cuidadosamente planejado para atender aos mais altos padrões de qualidade e conforto. Localizado em uma das áreas mais nobres de Säo Paulo, o bairro de Perdizes, oferece o equilíbrio perfeito entre modernidade, conveniência e tranquilidade, garantindo uma experiência de viver única para você.'
                   buttonText='ACESSE O BOOK'
-                  linkButton='https://google.com/'
+                  linkButton='https://www.diariodois.com.br/vid/BookSublime1.pdf'
                 />
               </div>
 
@@ -104,10 +119,16 @@ function App() {
 
       <Footer />
 
-      <Modal show={show} onHide={handleClose} centered size="xl">
+      <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
         </Modal.Header>
-        <iframe height="500" src="https://www.youtube.com/embed/QzdbB6YnDEA?si=lVN6W5zN8uMnZ9dA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <video
+          height="800"
+          controls
+          autoPlay
+        >
+          <source src="https://www.diariodois.com.br/vid/Video1.mp4" />
+        </video>
       </Modal>
     </>
   )

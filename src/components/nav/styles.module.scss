@@ -10,6 +10,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 1080px) {
+      justify-content: center;
+      flex-direction: column;
+    }
   }
 
   .item {
@@ -34,6 +39,11 @@
       img {
         width: 100%;
       }
+
+      @media screen and (max-width: 1080px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
     }
 
     .icon {
@@ -44,6 +54,11 @@
       img {
         width: 100%;
       }
+
+      @media screen and (max-width: 1080px) {
+        width: 25.7;
+        height: 25.9;
+      }
     }
 
     p {
@@ -51,6 +66,10 @@
       font-size: 28px;
       font-family: "Philosopher", sans-serif;
       margin: 0;
+
+      @media screen and (max-width: 1080px) {
+        font-size: 18px;
+      }
     }
   }
 }

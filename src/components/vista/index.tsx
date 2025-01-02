@@ -1,10 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styles from './styles.module.scss';
 import { Modal } from 'react-bootstrap';
+import { FaPlayCircle } from 'react-icons/fa';
 
 function Vista() {
   const [show, setShow] = useState(false);
   const [videoCurrent, setVideoCurrent] = useState('');
+  const video1Ref = useRef<HTMLVideoElement>(null);
+  const video2Ref = useRef<HTMLVideoElement>(null);
 
   const handleClose = () => setShow(false);
   const handleShow = (url: string) => {
@@ -12,6 +15,23 @@ function Vista() {
     setVideoCurrent(url);
   };
 
+  useEffect(() => {
+    if (video1Ref && video1Ref.current) {
+      video1Ref.current.addEventListener('loadedmetadata', function () {
+        if (video1Ref && video1Ref.current)
+          video1Ref.current.currentTime = 5;
+      })
+    }
+  }, [video1Ref])
+
+  useEffect(() => {
+    if (video2Ref && video2Ref.current) {
+      video2Ref.current.addEventListener('loadedmetadata', function () {
+        if (video2Ref && video2Ref.current)
+          video2Ref.current.currentTime = 7;
+      })
+    }
+  }, [video2Ref])
 
   return (
     <>
@@ -26,18 +46,48 @@ function Vista() {
               <h4>Vista Pompeia</h4>
               <div
                 className={styles.videoDefault}
-                onClick={() => handleShow("https://www.youtube.com/embed/QzdbB6YnDEA?si=lVN6W5zN8uMnZ9dA")}
+                onClick={() => handleShow("https://www.diariodois.com.br/vid/VistaPompeia1.mp4")}
               >
-                {/* <img src={`https://img.youtube.com/vi/QzdbB6YnDEA/maxresdefault.jpg`} alt="Vista Pompeia" /> */}
+                <button>
+                  <FaPlayCircle
+                    size={120}
+                    color='white'
+                    opacity={.7}
+                  />
+                </button>
+                <video
+                  style={{
+                    width: '105%',
+                    height: '120%'
+                  }}
+                  ref={video1Ref}
+                >
+                  <source src="https://www.diariodois.com.br/vid/VistaPompeia1.mp4" />
+                </video>
               </div>
             </div>
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-6 mt-5 mt-md-0">
               <h4>Vista Bairro</h4>
               <div
                 className={styles.videoDefault}
-                onClick={() => handleShow("https://www.youtube.com/embed/StNqF4FaD9k?si=taoAC4Q4Nmvf6-L1")}
+                onClick={() => handleShow("https://www.diariodois.com.br/vid/VistaBairro1.mp4")}
               >
-                {/* <img src={`https://img.youtube.com/vi/StNqF4FaD9k/maxresdefault.jpg`} alt="Vista Bairro" /> */}
+                <button>
+                  <FaPlayCircle
+                    size={120}
+                    color='white'
+                    opacity={.7}
+                  />
+                </button>
+                <video
+                  style={{
+                    width: '105%',
+                    height: '120%'
+                  }}
+                  ref={video2Ref}
+                >
+                  <source src="https://www.diariodois.com.br/vid/VistaBairro1.mp4" />
+                </video>
               </div>
             </div>
           </div>
@@ -46,7 +96,13 @@ function Vista() {
       <Modal show={show} onHide={handleClose} centered size="xl">
         <Modal.Header closeButton>
         </Modal.Header>
-        <iframe height={500} src={videoCurrent} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <video
+          height="650"
+          controls
+          autoPlay
+        >
+          <source src={videoCurrent} />
+        </video>
       </Modal>
     </>
   )

@@ -8,7 +8,7 @@ function Nav() {
       <div className="container">
         <div className={styles.items}>
           <div className="">
-            <div className={styles.item} style={{ justifyContent: 'start' }}>
+            <div className={`${styles.item} flex-column flex-md-row`}>
               <div className={styles.corretor}>
                 <img src={CorretoraDebora} alt="Corretora Debora" />
               </div>
@@ -23,8 +23,8 @@ function Nav() {
               <p>(11) 93239-3570</p>
             </div>
           </div>
-          <div className="text-center mt-5 mt-md-0">
-            <div className={styles.item} style={{ justifyContent: 'end' }}>
+          <div className="text-center mt-4 mt-md-0">
+            <div className={styles.item}>
               <p>CRECI 227.545-F</p>
             </div>
           </div>

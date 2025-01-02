@@ -7,7 +7,11 @@
 
   .header {
     text-align: center;
-    margin-bottom: 192px;
+    margin-bottom: 70px;
+
+    @media screen and (max-width: 1080px) {
+      margin-bottom: 50px;
+    }
 
     span {
       font-family: "Helvetica Neue";
@@ -68,18 +72,32 @@
       height: 63px;
       background-image: url(../../assets/icons/unicons-arrow-c-2.png);
       transform: rotate(-180deg);
+
+      @media screen and (max-width: 1080px) {
+        width: 30px;
+        height: 30px;
+      }
     }
 
     :global(.carousel-control-next-icon) {
       width: 63px;
       height: 63px;
       background-image: url(../../assets/icons/unicons-arrow-c-2.png);
+
+      @media screen and (max-width: 1080px) {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 
   .actions {
-    margin-top: 290px;
+    margin-top: 120px;
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 1080px) {
+      margin-top: 50px;
+    }
   }
 }
